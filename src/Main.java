@@ -5,5 +5,6 @@ public class Main {
         Book book1=new Book("Фауст",autor2,2015);
         Book book2=new Book("Вишневый сад",autor1,2014);
         book1.setYearOfPublic(2016);
+
     }
 }

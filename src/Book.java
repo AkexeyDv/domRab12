@@ -20,6 +20,7 @@ public class Book{
     public void setYearOfPublic(int yearOfPublic){
         this.yearOfPublic = yearOfPublic;
 
+
     }
 
 }

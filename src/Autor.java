@@ -11,6 +11,7 @@ public class Autor{
     }
     public String getIma() {
         return ima;
+
     }
 
 
