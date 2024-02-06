@@ -1,16 +1,16 @@
 public class Autor{
-    private String fam;
-    private String ima;
+    private String surnameAutor;
+    private String nameAutor;
 
-    public Autor(String fam,String ima){
-        this.fam=fam;
-        this.ima=ima;
+    public Autor(String surnameAutor,String nameAutor){
+        this.surnameAutor=surnameAutor;
+        this.nameAutor=nameAutor;
     }
     public String getFam() {
-        return fam;
+        return surnameAutor;
     }
     public String getIma() {
-        return ima;
+        return nameAutor;
 
     }
 
