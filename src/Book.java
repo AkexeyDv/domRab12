@@ -25,8 +25,25 @@ public class Book {
     public void setYearOfPublic(int yearOfPublic) {
         this.yearOfPublic = yearOfPublic;
     }
-    public String toString(){
-        return "Название книги '"+this.name+"'. Автор: " + autor+". Год издания: "+this.yearOfPublic;
+
+    @Override
+    public String toString() {
+        return "Название книги '" + this.name + "'. Автор: " + autor + ". Год издания: " + this.yearOfPublic;
+    }
+
+    @Override
+    public boolean equals(Object otherBook) {
+        if (this.getClass() != otherBook.getClass()) {
+            return false;
+        }
+        Book bookX = (Book) otherBook;
+        return (name + autor).equals(bookX.name + bookX.autor);
+
+    }
+
+    @Override
+    public int hashCode() {
+        return java.util.Objects.hash(name + autor);
     }
 
 }
