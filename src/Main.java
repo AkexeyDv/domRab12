@@ -1,5 +1,3 @@
-import java.awt.*;
-
 public class Main {
     public static void main(String[] args) {
         Autor autor1 = new Autor("Чехов", "Антон");
@@ -11,7 +9,7 @@ public class Main {
         book1.setYearOfPublic(2016);
         System.out.println(book1);
 
-        System.out.println(autor1.equals(autor3));
-        System.out.println(book3.equals(book1));
+        System.out.println(autor1.equals(autor1));
+        System.out.println(book3.equals(book2));
     }
 }
