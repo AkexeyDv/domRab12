@@ -18,7 +18,8 @@ public class Autor {
     }
 
     @Override
-    public String toString() {
+    public String toString()
+    {
         return surnameAutor + ' ' + nameAutor;
     }
 

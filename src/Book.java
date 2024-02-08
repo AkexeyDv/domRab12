@@ -38,7 +38,8 @@ public class Book {
     }
 
     @Override
-    public boolean equals(Object o) {
+    public boolean equals(Object o)
+    {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
@@ -46,7 +47,9 @@ public class Book {
     }
 
     @Override
-    public int hashCode() {
+    public int hashCode()
+    {
         return java.util.Objects.hash(name + autor);
+
     }
 }
